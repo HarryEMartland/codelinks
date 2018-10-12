@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- "10"
+
+before_script:
+- yarn install
+script: yarn build
+
+notifications:
+  email:
+    recipients:
+    - harryemartland@gmail.com
+    on_success: change
+    on_failure: always
