@@ -1,0 +1,78 @@
+import React from "react";
+import links from './data/links'
+import tags from './data/tags'
+import ViewLinksList from "./ViewLinksList";
+import Grid from "@material-ui/core/Grid/Grid";
+import ViewTagSelect from "./ViewTagSelect";
+import Button from "@material-ui/core/Button/Button";
+import Paper from "@material-ui/core/Paper/Paper";
+import Typography from "@material-ui/core/Typography/Typography";
+
+export default class LinksList extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+        this.toggleTagFilter = this.toggleTagFilter.bind(this);
+        this.clearTags = this.clearTags.bind(this);
+        this.state = {
+            selected: [],
+            links: links,
+        }
+    }
+
+    handleChange(e) {
+        const tags = e.target.value;
+        const filteredLinks = links.filter(link => {
+            return tags.every(tag => link.tags.indexOf(tag) > -1);
+        });
+
+        this.setState({selected: tags, links: filteredLinks});
+
+    }
+
+    toggleTagFilter(tag) {
+        let tags = this.state.selected;
+        if (tags.includes(tag)) {
+            tags = this.state.selected.filter(e => e !== tag)
+        } else {
+            tags = [...this.state.selected, tag];
+        }
+        const filteredLinks = links.filter(link => {
+            return tags.every(tag => link.tags.indexOf(tag) > -1);
+        });
+
+        this.setState({selected: tags, links: filteredLinks});
+    }
+
+    clearTags() {
+        this.setState({selected: [], links: links});
+    }
+
+    render() {
+        return <div>
+            <Grid container spacing={24}>
+                <Grid item sm={12}>
+                    <ViewTagSelect tags={tags} selected={this.state.selected}
+                                   toggleTagFilter={this.toggleTagFilter}/>
+                </Grid>
+            </Grid>
+            <ViewLinksList links={this.state.links} toggleTagFilter={this.toggleTagFilter}/>
+
+            {this.state.links.length === 0 && <Grid container spacing={24} justify="center">
+                <Grid item sm={4}><Paper style={{
+                    textAlign: 'center',
+                    paddingTop: '8px',
+                    paddingBottom: '8px',
+                    marginTop: '16px'
+                }}><Typography component="p">No Links</Typography></Paper></Grid></Grid>}
+
+            {this.state.selected.length > 0 && <Grid container spacing={24} justify="center">
+                <Grid item sm={2} style={{textAlign: 'center'}}>
+                    <Button variant="contained" onClick={this.clearTags}>Clear Tags</Button>
+                </Grid>
+            </Grid>}
+        </div>
+    }
+
+}
