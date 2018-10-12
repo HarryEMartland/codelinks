@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+var AppCachePlugin = require('appcache-webpack-plugin');
 const webpack = require('webpack');
 
 const htmlPlugin = new HtmlWebPackPlugin({
@@ -28,5 +29,13 @@ module.exports = {
     plugins: [
         htmlPlugin,
         new webpack.HotModuleReplacementPlugin(),
+        new AppCachePlugin({
+            cache: ['index.html', 'main.js'],
+            network: null,
+            fallback: [],
+            settings: ['prefer-online'],
+            exclude: ['sockjs-node/info.*' ,/.*info.*$/],
+            output: 'manifest.appcache'
+        })
     ]
 };

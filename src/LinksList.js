@@ -51,7 +51,7 @@ export default class LinksList extends React.Component {
 
     render() {
         return <div>
-            <Grid container spacing={24}>
+            <Grid container spacing={16}>
                 <Grid item sm={12}>
                     <ViewTagSelect tags={tags} selected={this.state.selected}
                                    toggleTagFilter={this.toggleTagFilter}/>
@@ -59,7 +59,7 @@ export default class LinksList extends React.Component {
             </Grid>
             <ViewLinksList links={this.state.links} toggleTagFilter={this.toggleTagFilter}/>
 
-            {this.state.links.length === 0 && <Grid container spacing={24} justify="center">
+            {this.state.links.length === 0 && <Grid container justify="center">
                 <Grid item sm={4}><Paper style={{
                     textAlign: 'center',
                     paddingTop: '8px',

@@ -42,7 +42,7 @@ function toColor(string) {
     return colors[(Math.abs(hashCode(string)) % colors.length)]
 }
 
-export default (props) => <Grid item xl={3} lg={4} md={6} sm={6} xs={12}>
+export default (props) => <Grid item xl={3} lg={4} md={6} sm={12} xs={12}>
     <Card>
         <CardHeader
             avatar={
