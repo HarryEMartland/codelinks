@@ -33,6 +33,7 @@ describe('links', function () {
             });
 
             it('should be valid link', function () {
+                this.timeout(4000);
                 return axios.get('https://' + link.link)
             });
 
