@@ -39,5 +39,8 @@ export default {
     },
     "k8s":{
         name: "Kubernetes"
+    },
+    "game":{
+        name:"Game"
     }
 }

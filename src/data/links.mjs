@@ -106,5 +106,15 @@ export default [
       "docs"
     ],
     "description": "Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications."
+  },
+  {
+    "name": "CSS Diner",
+    "link": "flukeout.github.io",
+    "tags": [
+      "css",
+      "tutorial",
+      "game"
+    ],
+    "description": "A game to teach you CSS selectors."
   }
 ]
