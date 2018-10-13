@@ -93,7 +93,7 @@ export default [
     "name": "Play with Kubernetes",
     "link": "training.play-with-kubernetes.com",
     "tags": [
-      "docker,",
+      "docker",
       "tutorial"
     ],
     "description": "The Play with Kubernetes classroom is a new site provided by Docker that helps you get hands-on experience using Kubernetes. We provide a workshop that will allow you, in the browser, to follow a Kubernetes tutorial without having to install a single thing."
