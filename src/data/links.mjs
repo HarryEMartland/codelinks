@@ -88,5 +88,14 @@ export default [
       "tutorial"
     ],
     "description": "The Play with Docker classroom brings you labs and tutorials that help you get hands-on experience using Docker. In this classroom you will find a mix of labs and tutorials that will help Docker users, including SysAdmins, IT Pros, and Developers. There is a mix of hands-on tutorials right in the browser, instructions on setting up and using Docker in your own environment, and resources about best practices for developing and deploying your own applications."
+  },
+  {
+    "name": "Play with Kubernetes",
+    "link": "training.play-with-kubernetes.com",
+    "tags": [
+      "docker,",
+      "tutorial"
+    ],
+    "description": "The Play with Kubernetes classroom is a new site provided by Docker that helps you get hands-on experience using Kubernetes. We provide a workshop that will allow you, in the browser, to follow a Kubernetes tutorial without having to install a single thing."
   }
 ]
