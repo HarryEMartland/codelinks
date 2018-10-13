@@ -1,6 +1,6 @@
 var assert = require('assert');
-import links from '../src/data/links'
-import tags from '../src/data/tags'
+import links from '../src/data/links.mjs'
+import tags from '../src/data/tags.mjs'
 import axios from 'axios'
 
 describe('links', function () {
