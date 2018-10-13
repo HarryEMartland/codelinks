@@ -36,5 +36,8 @@ export default {
     },
     "css":{
         name:"CSS"
+    },
+    "k8s":{
+        name: "Kubernetes"
     }
 }
