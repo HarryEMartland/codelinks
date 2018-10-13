@@ -6,7 +6,8 @@
     "scripts": {
         "test": "mocha --compilers js:babel-core/register",
         "start": "webpack-dev-server --open --config webpack.dev.js",
-        "build": "yarn test && webpack --config webpack.prod.js"
+        "build": "yarn test && webpack --config webpack.prod.js",
+        "add": "node --experimental-modules src/add.mjs"
     },
     "author": "",
     "license": "ISC",
