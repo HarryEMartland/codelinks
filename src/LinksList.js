@@ -65,7 +65,7 @@ export default class LinksList extends React.Component {
     }
 
     clearTags() {
-        this.setState({selected: [], links: links, tagCount: this.countTags(links)});
+        this.setState({selected: [], links: links, tagCount: this.countTags(links), showSecondary:false});
     }
 
     render() {
