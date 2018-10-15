@@ -18,7 +18,21 @@ export default class LinksList extends React.Component {
         this.state = {
             selected: [],
             links: links,
-        }
+            tagCount: this.countTags(links)
+        };
+    }
+
+    countTags(selectedLinks) {
+        const tagCount = {};
+        selectedLinks.forEach(link => {
+            link.tags.forEach(tag => {
+                if (!tagCount[tag]) {
+                    tagCount[tag] = 0;
+                }
+                tagCount[tag] = tagCount[tag] + 1
+            })
+        });
+        return tagCount;
     }
 
     handleChange(e) {
@@ -42,18 +56,18 @@ export default class LinksList extends React.Component {
             return tags.every(tag => link.tags.indexOf(tag) > -1);
         });
 
-        this.setState({selected: tags, links: filteredLinks});
+        this.setState({selected: tags, links: filteredLinks, tagCount:this.countTags(filteredLinks)});
     }
 
     clearTags() {
-        this.setState({selected: [], links: links});
+        this.setState({selected: [], links: links, tagCount:this.countTags(links)});
     }
 
     render() {
         return <div>
             <Grid container spacing={16}>
                 <Grid item sm={12}>
-                    <ViewTagSelect tags={tags} selected={this.state.selected}
+                    <ViewTagSelect tags={tags} tagCount={this.state.tagCount} selected={this.state.selected}
                                    toggleTagFilter={this.toggleTagFilter}/>
                 </Grid>
             </Grid>
