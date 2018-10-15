@@ -46,28 +46,34 @@ export default class LinksList extends React.Component {
     }
 
     toggleTagFilter(tag) {
-        let tags = this.state.selected;
-        if (tags.includes(tag)) {
-            tags = this.state.selected.filter(e => e !== tag)
+        let selectetags = this.state.selected;
+        if (selectetags.includes(tag)) {
+            selectetags = this.state.selected.filter(e => e !== tag)
         } else {
-            tags = [...this.state.selected, tag];
+            selectetags = [...this.state.selected, tag];
         }
         const filteredLinks = links.filter(link => {
-            return tags.every(tag => link.tags.indexOf(tag) > -1);
+            return selectetags.every(tag => link.tags.indexOf(tag) > -1);
         });
 
-        this.setState({selected: tags, links: filteredLinks, tagCount:this.countTags(filteredLinks)});
+        this.setState({
+            selected: selectetags,
+            showSecondary: selectetags.length > 0,
+            links: filteredLinks,
+            tagCount: this.countTags(filteredLinks)
+        });
     }
 
     clearTags() {
-        this.setState({selected: [], links: links, tagCount:this.countTags(links)});
+        this.setState({selected: [], links: links, tagCount: this.countTags(links)});
     }
 
     render() {
         return <div>
             <Grid container spacing={16}>
                 <Grid item sm={12}>
-                    <ViewTagSelect tags={tags} tagCount={this.state.tagCount} selected={this.state.selected}
+                    <ViewTagSelect tags={tags} tagCount={this.state.tagCount}
+                                   selected={this.state.selected} showSecondary={this.state.showSecondary}
                                    toggleTagFilter={this.toggleTagFilter}/>
                 </Grid>
             </Grid>
