@@ -6,7 +6,7 @@ import Avatar from "@material-ui/core/Avatar/Avatar";
 export default ({tagCount, toggleTagFilter, selected, showSecondary}) => <div>
     {Object.keys(tags).filter(key => tagCount[key]).filter(key => tags[key].primary || showSecondary).sort((k1, k2) => tagCount[k2] - tagCount[k1]).map(key =>
         <React.Fragment key={key}>
-            <Chip label={tags[key].name}
+            <Chip label={tags[key].name} style={{marginBottom: '4px'}}
                   avatar={<Avatar>{tagCount[key]}</Avatar>}
                   onClick={() => toggleTagFilter(key)}
                   color={selected.includes(key) ? 'primary' : 'default'}/>&nbsp;
