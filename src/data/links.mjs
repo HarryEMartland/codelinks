@@ -123,7 +123,7 @@ export default [
     "tags": [
       "html",
       "tutorial",
-      "gmae"
+      "game"
     ],
     "description": "E.A.K. teaches children to code in a totally new way. Instead of just learning computational thinking, girls and boys learn to code by building and fixing reallevels as they play online. As the game progresses, children will learn how to use their new skills to build their own simple creations on the web. E.A.K. currently teaches HTML syntax, and once purchased, will be updated regularly - teaching HTML, CSS and JavaScript."
   }
