@@ -3,6 +3,8 @@ import React from "react";
 import LinksList from "./LinksList";
 import Typography from "@material-ui/core/Typography/Typography";
 import Grid from "@material-ui/core/Grid/Grid";
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-127494501-1');
 
 const App = () => <Grid container justify="center">
     <Grid item sm={12} lg={8} xs={12}>

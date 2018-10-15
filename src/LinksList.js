@@ -7,6 +7,7 @@ import ViewTagSelect from "./ViewTagSelect";
 import Button from "@material-ui/core/Button/Button";
 import Paper from "@material-ui/core/Paper/Paper";
 import Typography from "@material-ui/core/Typography/Typography";
+import ReactGA from 'react-ga';
 
 export default class LinksList extends React.Component {
 
@@ -46,6 +47,11 @@ export default class LinksList extends React.Component {
     }
 
     toggleTagFilter(tag) {
+        ReactGA.event({
+            category: 'User',
+            action: 'Tag Filter',
+            label: tag
+        });
         let selectetags = this.state.selected;
         if (selectetags.includes(tag)) {
             selectetags = this.state.selected.filter(e => e !== tag)
