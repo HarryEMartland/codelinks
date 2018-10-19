@@ -45,6 +45,7 @@ module.exports = {
             description: 'A collection of links to help you learn new languages and technologies including javascript, python, kubernetes and more.',
             background_color: 'white',
             crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
+            theme_color: 'white',
             icons: [
                 {
                     src: path.resolve('./src/assets/icon.png'),
