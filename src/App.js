@@ -8,7 +8,7 @@ ReactGA.initialize('UA-127494501-1');
 
 const App = () => <Grid container justify="center">
     <Grid item sm={12} lg={8} xs={12}>
-        <Typography component="h2" variant="display2">
+        <Typography component="h2" variant="h3" style={{fontFamily:"'VT323', monospace"}}>
             ://LearnTo.Codes
         </Typography>
         <LinksList/>
