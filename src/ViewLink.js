@@ -53,7 +53,7 @@ export default (props) => <Grid item xl={3} lg={4} md={6} sm={12} xs={12}>
                 <OpenInNewIcon
                     fontSize="inherit"/></ReactGA.OutboundLink>}
         />
-        <CardContent style={{paddingTop: '0px'}}>
+        <CardContent style={{paddingTop: '0px', minHeight: '60px'}}>
             <Typography component="p">
                 {props.description}{props.descriptionOverFlow &&
             <a onClick={props.showFullDescription}>...</a>}

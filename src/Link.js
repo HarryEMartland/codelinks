@@ -1,7 +1,7 @@
 import React from "react";
 import ViewLink from "./ViewLink";
 
-const MAX_DESCRIPTION = 150;
+const MAX_DESCRIPTION = 130;
 
 export default class Link extends React.Component {
 
