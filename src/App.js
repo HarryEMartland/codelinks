@@ -14,9 +14,9 @@ const App = () => <Grid container justify="center">
         <LinksList/>
         <footer style={{paddingTop: '16px', paddingBottom: '4px'}}>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                Thanks for using <a href="https://codelinks.exchange">://codelinks.exchange</a>.
-                Help make this site better by adding more links either by raising an issue or doing
-                a PR.
+                Thanks for using <a href="https://LearnTo.Codes">://LearnTo.Codes</a>.
+                Help make this site better by adding more links either by raising an <a rel="noopener" target="_blank" href="https://github.com/HarryEMartland/learnto.codes/issues">issue</a> or submitting
+                a <a href="https://github.com/HarryEMartland/learnto.codes" target="_blank" rel="noopener">PR</a>.
             </Typography>
         </footer>
     </Grid>
