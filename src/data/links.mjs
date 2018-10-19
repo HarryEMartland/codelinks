@@ -16,8 +16,9 @@ export default [
     "description": "From project planning and source code management to CI/CD and monitoring, GitLab is a single application for the entire DevOps lifecycle. Only GitLab enables Concurrent DevOps to make the software lifecycle 200% faster."
   },
   {
+    "id": "Codecademy(js)",
     "name": "Codecademy",
-    "link": "www.codecademy.com",
+    "link": "codecademy.com/catalog/language/javascript",
     "tags": [
       "tutorial",
       "js"
@@ -25,8 +26,19 @@ export default [
     "description": "Whether you're trying to level up your career, build your side project, or simply play around with programming, you've found the right place to start. Explore our programs and courses, try an exercise or two, and join our community of 45 million learners."
   },
   {
+    "id": "Codecademy(html/css)",
+    "name": "Codecademy",
+    "link": "codecademy.com/catalog/language/html-css",
+    "tags": [
+      "tutorial",
+      "html",
+      "css"
+    ],
+    "description": "Whether you're trying to level up your career, build your side project, or simply play around with programming, you've found the right place to start. Explore our programs and courses, try an exercise or two, and join our community of 45 million learners."
+  },
+  {
     "name": "Docker Hub",
-    "link": "www.codecademy.com",
+    "link": "hub.docker.com",
     "tags": [
       "docker",
       "repository"
@@ -126,5 +138,15 @@ export default [
       "game"
     ],
     "description": "E.A.K. teaches children to code in a totally new way. Instead of just learning computational thinking, girls and boys learn to code by building and fixing reallevels as they play online. As the game progresses, children will learn how to use their new skills to build their own simple creations on the web. E.A.K. currently teaches HTML syntax, and once purchased, will be updated regularly - teaching HTML, CSS and JavaScript."
+  },
+  {
+    "id": "Codecademy(python)",
+    "name": "Codecademy",
+    "link": "codecademy.com/catalog/language/python",
+    "tags": [
+      "python",
+      "tutorial"
+    ],
+    "description": "Whether you're trying to level up your career, build your side project, or simply play around with programming, you've found the right place to start. Explore our programs and courses, try an exercise or two, and join our community of 45 million learners."
   }
 ]

@@ -51,5 +51,8 @@ export default {
     },
     "game":{
         name:"Game"
+    },
+    "python": {
+        name: "Python"
     }
 }
