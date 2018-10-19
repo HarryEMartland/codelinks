@@ -26,9 +26,16 @@ export default class Link extends React.Component {
             descriptionOverFlow = this.props.description.length > MAX_DESCRIPTION;
         }
 
+        let slashLocaion = this.props.link.indexOf('/');
+        let displayLink = this.props.link;
+        if(slashLocaion>0) {
+            displayLink = this.props.link.substring(0, slashLocaion);
+        }
+
         return <ViewLink{...this.props} {...this.state}
                         showFullDescription={this.showFullDescription}
                         description={description}
+                        displayLink={displayLink}
                         descriptionOverFlow={descriptionOverFlow}/>
     }
 }
