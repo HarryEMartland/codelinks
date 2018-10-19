@@ -44,7 +44,7 @@ export default (props) => <Grid item xl={3} lg={4} md={6} sm={12} xs={12}>
         <CardHeader
             avatar={
                 <Avatar aria-label="Recipe" style={{backgroundColor: toColor(props.name)}}>
-                    {props.name.split(' ').map(word => word[0]).join('').slice(0, 2)}
+                    {props.name.split(' ').map(word => word[0]).join('').slice(0, 2).toUpperCase()}
                 </Avatar>
             }
             title={props.name}
