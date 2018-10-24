@@ -9,6 +9,7 @@ import CardActions from "@material-ui/core/CardActions/CardActions";
 import Button from "@material-ui/core/Button/Button";
 import OpenInNewIcon from '@material-ui/icons/OpenInNew'
 import ReactGA from 'react-ga';
+import NanoClamp from 'nanoclamp';
 
 const colors = [
     '#f6685e',
@@ -47,16 +48,15 @@ export default (props) => <Grid item xl={3} lg={4} md={6} sm={12} xs={12}>
                     {props.name.split(' ').map(word => word[0]).join('').slice(0, 2).toUpperCase()}
                 </Avatar>
             }
-            title={props.name}
-            subheader={<ReactGA.OutboundLink rel="noopener" target="_blank" eventLabel={props.name}
+            title={<span style={{whiteSpace:'nowrap'}}>{props.name}</span>}
+            subheader={<ReactGA.OutboundLink  style={{whiteSpace:'nowrap'}} rel="noopener" target="_blank" eventLabel={props.name}
                                              to={'https://' + props.link}>{props.displayLink}
                 <OpenInNewIcon
                     fontSize="inherit"/></ReactGA.OutboundLink>}
         />
-        <CardContent style={{paddingTop: '0px', minHeight: '60px'}}>
-            <Typography component="p">
-                {props.description}{props.descriptionOverFlow &&
-            <a onClick={props.showFullDescription}>...</a>}
+        <CardContent style={{paddingTop: '0px'}}>
+            <Typography component="p" style={{minHeight: '60px'}}>
+                <NanoClamp lines="3" is="p" text={props.description}/>
             </Typography>
         </CardContent>
         <CardActions>
