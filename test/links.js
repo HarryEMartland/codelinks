@@ -6,7 +6,7 @@ import axios from 'axios'
 describe('links', function () {
 
     it('should all be valid urls', function () {
-        this.timeout(6000);
+        this.timeout(7000);
         return Promise.all(links.map(link=>axios.get('https://' +link.link)));
     });
 
@@ -37,12 +37,17 @@ describe('links', function () {
                 assert.ok(!link.link.startsWith('https://'))
             });
 
-
             it(`should have valid tags: ${link.tags}`, function () {
                 link.tags.forEach(function (tag) {
                     assert.notEqual(undefined, tags[tag])
                 })
             });
+
+            it('should have unique name', function () {
+                links.forEach(otherLink =>{
+                    assert.ok(otherLink === link || (otherLink.id || otherLink.name) !== (link.id || link.name))
+                })
+            })
         })
 
     })
