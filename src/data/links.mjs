@@ -263,5 +263,14 @@ export default [
       "tutorial"
     ],
     "description": "Join the largest community of mobile code learners today. Anytime and Anywhere, on Any Device. Start Learning Now"
+  },
+  {
+    "name": "Java Docs",
+    "link": "docs.oracle.com/javase/10/docs/api/overview-summary.html",
+    "tags": [
+      "java",
+      "docs"
+    ],
+    "description": "Documentation for the Java Platform listing all classes and their public API's"
   }
 ]
