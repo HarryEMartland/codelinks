@@ -158,5 +158,32 @@ export default [
       "game"
     ],
     "description": "CodeCombat is a platform for students to learn computer science while playing through a real game."
-  }
+  },
+  {
+    "id": "Code Wars (python)",
+    "name": "Code Wars",
+    "link": "www.codewars.com/?language=python",
+    "tags": [
+      "python"
+    ],
+    "description": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one."
+  },
+  {
+    "id": "Code Wars (javascript)",
+    "name": "Code Wars",
+    "link": "www.codewars.com/?language=javascript",
+    "tags": [
+      "js"
+    ],
+    "description": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one."
+  },
+   {
+    "id": "Code Wars (java)",
+    "name": "Code Wars",
+    "link": "www.codewars.com/?language=java",
+    "tags": [
+      "java"
+    ],
+    "description": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one."
+   }
 ]
