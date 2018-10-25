@@ -53,6 +53,7 @@ export default {
         name:"Game"
     },
     "python": {
-        name: "Python"
+        name: "Python",
+        primary: true
     }
 }
