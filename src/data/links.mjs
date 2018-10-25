@@ -177,7 +177,7 @@ export default [
     ],
     "description": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one."
   },
-   {
+  {
     "id": "Code Wars (java)",
     "name": "Code Wars",
     "link": "www.codewars.com/?language=java",
@@ -185,5 +185,14 @@ export default [
       "java"
     ],
     "description": "Challenge yourself on kata, created by the community to strengthen different skills. Master your current language of choice, or expand your understanding of a new one."
-   }
+  },
+  {
+    "name": "Learn Java Online",
+    "link": "learnjavaonline.org",
+    "tags": [
+      "java",
+      "tutorial"
+    ],
+    "description": "By running real Java code directly from the web browser, students are able to try out Java without installing it. This creates a more efficient learning process, because students focus on the important stuff - learning how to program."
+  }
 ]
