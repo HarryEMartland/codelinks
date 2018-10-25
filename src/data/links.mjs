@@ -213,5 +213,55 @@ export default [
       "tutorial"
     ],
     "description": "Learn HTML provides an interactive tutorial that explains how to build HTML & CSS websites step by step."
+  },
+  {
+    "id": "Sololearn (html)",
+    "name": "Sololearn",
+    "link": "sololearn.com/Course/HTML",
+    "tags": [
+      "html",
+      "tutorial"
+    ],
+    "description": "Join the largest community of mobile code learners today. Anytime and Anywhere, on Any Device. Start Learning Now"
+  },
+  {
+    "id": "Sololearn (css)",
+    "name": "Sololearn",
+    "link": "www.sololearn.com/Course/CSS",
+    "tags": [
+      "css",
+      "tutorial"
+    ],
+    "description": "Join the largest community of mobile code learners today. Anytime and Anywhere, on Any Device. Start Learning Now"
+  },
+  {
+    "id": "Sololearn (js)",
+    "name": "Sololearn",
+    "link": "sololearn.com/Course/JavaScript",
+    "tags": [
+      "js",
+      "tutorial"
+    ],
+    "description": "Join the largest community of mobile code learners today. Anytime and Anywhere, on Any Device. Start Learning Now"
+  },
+  {
+    "id": "Sololearn (java)",
+    "name": "Sololearn",
+    "link": "sololearn.com/Course/Java",
+    "tags": [
+      "java",
+      "tutorial"
+    ],
+    "description": "Join the largest community of mobile code learners today. Anytime and Anywhere, on Any Device. Start Learning Now"
+  },
+  {
+    "id": "Sololearn (python)",
+    "name": "Sololearn",
+    "link": "sololearn.com/Course/Python",
+    "tags": [
+      "python",
+      "tutorial"
+    ],
+    "description": "Join the largest community of mobile code learners today. Anytime and Anywhere, on Any Device. Start Learning Now"
   }
 ]
