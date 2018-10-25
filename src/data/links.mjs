@@ -203,5 +203,15 @@ export default [
       "tutorial"
     ],
     "description": "Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the Python programming language."
+  },
+  {
+    "name": "Learn-Html.org",
+    "link": "learn-html.org",
+    "tags": [
+      "html",
+      "css",
+      "tutorial"
+    ],
+    "description": "Learn HTML provides an interactive tutorial that explains how to build HTML & CSS websites step by step."
   }
 ]
