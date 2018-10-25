@@ -148,5 +148,15 @@ export default [
       "tutorial"
     ],
     "description": "Whether you're trying to level up your career, build your side project, or simply play around with programming, you've found the right place to start. Explore our programs and courses, try an exercise or two, and join our community of 45 million learners."
+  },
+  {
+    "name": "Code Combat",
+    "link": "codecombat.com/play",
+    "tags": [
+      "python",
+      "js",
+      "game"
+    ],
+    "description": "CodeCombat is a platform for students to learn computer science while playing through a real game."
   }
 ]
