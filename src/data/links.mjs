@@ -194,5 +194,14 @@ export default [
       "tutorial"
     ],
     "description": "By running real Java code directly from the web browser, students are able to try out Java without installing it. This creates a more efficient learning process, because students focus on the important stuff - learning how to program."
+  },
+  {
+    "name": "LearnPython.org",
+    "link": "learnpython.org",
+    "tags": [
+      "python",
+      "tutorial"
+    ],
+    "description": "Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the Python programming language."
   }
 ]
