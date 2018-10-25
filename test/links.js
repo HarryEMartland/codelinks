@@ -5,6 +5,11 @@ import axios from 'axios'
 
 describe('links', function () {
 
+    it('should all be valid urls', function () {
+        this.timeout(6000);
+        return Promise.all(links.map(link=>axios.get('https://' +link.link)));
+    });
+
     links.forEach(function (link) {
         describe(`link ${link.name}`, function () {
 
@@ -32,10 +37,6 @@ describe('links', function () {
                 assert.ok(!link.link.startsWith('https://'))
             });
 
-            it('should be valid link', function () {
-                this.timeout(4000);
-                return axios.get('https://' + link.link)
-            });
 
             it(`should have valid tags: ${link.tags}`, function () {
                 link.tags.forEach(function (tag) {
