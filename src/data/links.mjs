@@ -314,5 +314,13 @@ export default [
       "git"
     ],
     "description": "PDF of commonly used commands and links."
+  },
+  {
+    "name": "Docker Cheat Sheet",
+    "link": "docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf",
+    "tags": [
+      "docker"
+    ],
+    "description": "PDF of commonly used commands to build, run, ship and orchestrate with docker."
   }
 ]
