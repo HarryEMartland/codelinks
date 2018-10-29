@@ -297,5 +297,14 @@ export default [
       "git"
     ],
     "description": "The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here."
+  },
+  {
+    "name": "Git Reference",
+    "link": "git-scm.com/docs",
+    "tags": [
+      "git",
+      "docs"
+    ],
+    "description": "Documentation on all the Git commands allong with other usefull guides and tutorials."
   }
 ]
