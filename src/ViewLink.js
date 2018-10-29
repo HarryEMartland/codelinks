@@ -49,7 +49,7 @@ export default (props) => <Grid item xl={3} lg={4} md={6} sm={12} xs={12}>
                 </Avatar>
             }
             title={<span style={{whiteSpace:'nowrap'}}>{props.name}</span>}
-            subheader={<ReactGA.OutboundLink  style={{whiteSpace:'nowrap'}} rel="noopener" target="_blank" eventLabel={props.name}
+            subheader={<ReactGA.OutboundLink  style={{whiteSpace:'nowrap'}} rel="noopener" target="_blank" eventLabel={props.id || props.name}
                                              to={'https://' + props.link}>{props.displayLink}
                 <OpenInNewIcon
                     fontSize="inherit"/></ReactGA.OutboundLink>}
