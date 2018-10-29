@@ -55,5 +55,9 @@ export default {
     "python": {
         name: "Python",
         primary: true
+    },
+    "git": {
+        name: "Git",
+        primary: true
     }
 }
