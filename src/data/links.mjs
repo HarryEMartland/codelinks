@@ -280,5 +280,13 @@ export default [
       "git"
     ],
     "description": "Tool to help you visualise the different git commands using an interactive console."
+  },
+  {
+    "name": "Learn Git Branching",
+    "link": "learngitbranching.js.org",
+    "tags": [
+      "git", "tutorial"
+    ],
+    "description": "Interested in learning Git? Well you've come to the right place! \"Learn Git Branching\" is the most visual and interactive way to learn Git on the web; you'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way."
   }
 ]
