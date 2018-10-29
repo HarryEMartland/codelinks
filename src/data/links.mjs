@@ -296,6 +296,6 @@ export default [
     "tags": [
       "git"
     ],
-    "description": ""
+    "description": "The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here."
   }
 ]
