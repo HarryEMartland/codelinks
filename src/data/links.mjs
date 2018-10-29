@@ -322,5 +322,15 @@ export default [
       "docker"
     ],
     "description": "PDF of commonly used commands to build, run, ship and orchestrate with docker."
+  },
+  {
+    "id": "Codecademy (Git)",
+    "name": "Codecademy",
+    "link": "codecademy.com/learn/learn-git",
+    "tags": [
+      "git",
+      "tutorial"
+    ],
+    "description": "This course will show you basic workflow and core features, different ways to undo changes or save multiple versions of a project, and how to collaborate with other developers."
   }
 ]
