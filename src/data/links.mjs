@@ -272,5 +272,13 @@ export default [
       "docs"
     ],
     "description": "Documentation for the Java Platform listing all classes and their public API's"
+  },
+  {
+    "name": "Visualising Git",
+    "link": "git-school.github.io/visualizing-git",
+    "tags": [
+      "git"
+    ],
+    "description": "Tool to help you visualise the different git commands using an interactive console."
   }
 ]
