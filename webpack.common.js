@@ -46,6 +46,7 @@ module.exports = {
             background_color: 'white',
             crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
             theme_color: 'white',
+            ios: true,
             icons: [
                 {
                     src: path.resolve('./src/assets/icon.png'),
