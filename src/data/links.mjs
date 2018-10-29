@@ -306,5 +306,13 @@ export default [
       "docs"
     ],
     "description": "Documentation on all the Git commands allong with other usefull guides and tutorials."
+  },
+  {
+    "name": "Git Cheat Sheet",
+    "link": "services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf",
+    "tags": [
+      "git"
+    ],
+    "description": "PDF of commonly used commands and links."
   }
 ]
