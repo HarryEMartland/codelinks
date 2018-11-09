@@ -332,5 +332,13 @@ export default [
       "tutorial"
     ],
     "description": "This course will show you basic workflow and core features, different ways to undo changes or save multiple versions of a project, and how to collaborate with other developers."
+  },
+  {
+    "name": "Docker for Mac and Windows",
+    "link": "dockercon2018.hubs.vidyard.com/watch/w3RJr1Su6oamQmemhGtaK3",
+    "tags": [
+      "docker"
+    ],
+    "description": "A video explaining the basics of docker along with how to set it up and best practices. This video was recorded at DockerCon 2018. "
   }
 ]
