@@ -4,6 +4,7 @@ import LinksList from "./LinksList";
 import Typography from "@material-ui/core/Typography/Typography";
 import Grid from "@material-ui/core/Grid/Grid";
 import ReactGA from 'react-ga';
+import ViewSocialBar from "./ViewSocialBar";
 ReactGA.initialize('UA-127494501-1');
 
 const App = () => <Grid container justify="center">
@@ -11,6 +12,7 @@ const App = () => <Grid container justify="center">
         <Typography component="h2" variant="h3" style={{fontFamily:"'VT323', monospace"}}>
             ://LearnTo.Codes
         </Typography>
+        <ViewSocialBar/>
         <LinksList/>
         <footer style={{paddingTop: '16px', paddingBottom: '4px'}}>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
