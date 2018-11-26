@@ -340,5 +340,13 @@ export default [
       "docker"
     ],
     "description": "A video explaining the basics of docker along with how to set it up and best practices. This video was recorded at DockerCon 2018. "
+  },
+  {
+    "name": "Agile Manifesto",
+    "link": "agilemanifesto.org",
+    "tags": [
+      "prod"
+    ],
+    "description": "A set of principals to help you make software in 'the best way'. By following these rules you will get more value out of your application in a shorter time."
   }
 ]
